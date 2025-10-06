@@ -1,35 +1,156 @@
-@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+/* توجيه النص لليمين */
+* {
+  direction: rtl;
+  text-align: right;
 }
 
-a,
-.green {
+/* تحسينات للخط العربي */
+body {
+  font-family: 'Tajawal', sans-serif;
+  line-height: 1.6;
+}
+
+/* تحسينات للعناصر النصية */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* تحسينات للأزرار والعناصر التفاعلية */
+button, input, select, textarea {
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* تحسينات للتمرير */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* تحسينات للشريط الجانبي */
+.sidebar-rtl {
+  border-left: 1px solid #e5e7eb;
+  border-right: none;
+}
+
+/* تحسينات للجداول */
+table {
+  text-align: right;
+}
+
+/* تحسينات للبطاقات */
+.card-rtl {
+  text-align: right;
+}
+
+/* تحسينات للأشكال */
+.form-rtl {
+  text-align: right;
+}
+
+.form-rtl input,
+.form-rtl textarea,
+.form-rtl select {
+  text-align: right;
+}
+
+/* تحسينات للروابط */
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+/* تحسينات للقوائم */
+ul, ol {
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+
+/* تحسينات للأيقونات */
+.icon-rtl {
+  transform: scaleX(-1);
+}
+
+/* تحسينات للهواتف */
+@media (max-width: 768px) {
+  .mobile-rtl {
+    text-align: right;
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+/* تأثيرات انتقال سلس */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* تحسينات للشريط العلوي */
+.navbar-rtl {
+  direction: rtl;
+}
+
+/* تحسينات للعناوين */
+.page-title {
+  font-weight: 800;
+  color: #1f2937;
+}
+
+/* تحسينات للأزرار */
+.btn-rtl {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 500;
+}
+
+/* تحسينات للإشعارات */
+.toast-rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* تحسينات للنماذج */
+.form-group-rtl {
+  text-align: right;
+}
+
+.form-label-rtl {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* تحسينات للجداول */
+.table-rtl {
+  text-align: right;
+}
+
+.table-rtl th {
+  font-weight: 600;
+  color: #374151;
+  text-align: right;
+}
+
+.table-rtl td {
+  text-align: right;
 }
