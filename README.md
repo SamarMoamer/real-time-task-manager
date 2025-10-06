@@ -77,14 +77,14 @@ It allows users to:
 ## Installation
 
 ### Backend
-```bash
+
 cd backend
 npm install
 cp .env.example .env   # configure environment variables
 npm run dev
 Frontend
 bash
-نسخ الكود
+
 cd frontend
 npm install
 npm run serve
@@ -121,7 +121,7 @@ Optional: notifications for task changes
 
 📂 Folder Structure
 bash
-نسخ الكود
+
 backend/
  ├─ controllers/
  ├─ models/
