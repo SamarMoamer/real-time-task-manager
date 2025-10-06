@@ -5,7 +5,7 @@ Built with **Node.js, Express.js, MongoDB, Socket.io, and Vue.js** for a modern,
 
 ---
 
-## 🔹 Table of Contents
+##  Table of Contents
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -19,7 +19,7 @@ Built with **Node.js, Express.js, MongoDB, Socket.io, and Vue.js** for a modern,
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 This project is a capstone for **full-stack development** with Node.js and Vue.js.  
 It allows users to:
 
@@ -31,7 +31,7 @@ It allows users to:
 
 ---
 
-## 🌟 Features
+## Features
 
 **Authentication & Authorization**
 - JWT-based login and registration
@@ -62,7 +62,7 @@ It allows users to:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer       | Technology                                      |
 |------------|-------------------------------------------------|
@@ -74,7 +74,7 @@ It allows users to:
 
 ---
 
-## ⚡ Installation
+## Installation
 
 ### Backend
 ```bash
@@ -90,7 +90,7 @@ npm install
 npm run serve
 Ensure the backend is running before starting the frontend.
 
-🏃 Usage
+Usage
 Register a new account (Admin or User)
 
 Log in to access the dashboard
@@ -101,7 +101,7 @@ Tasks synchronize in real-time across devices
 
 Access profile and shared components
 
-🔗 API Endpoints
+ API Endpoints
 Method	Endpoint	Description
 POST	/auth/register	Register a new user
 POST	/auth/login	Login user
@@ -112,7 +112,7 @@ DELETE	/tasks/:id	Delete task
 
 Use JWT token in headers for protected routes.
 
-🌐 Real-Time Features
+Real-Time Features
 Live task updates across multiple sessions
 
 Dashboard and task lists update instantly
@@ -138,7 +138,7 @@ frontend/
  │   └─ assets/          # Images, icons, styles
  ├─ main.js
  └─ App.vue
-🤝 Contributing
+Contributing
 Fork the repository
 
 Create a feature branch (git checkout -b feature/your-feature)
@@ -149,10 +149,10 @@ Push to the branch (git push origin feature/your-feature)
 
 Open a Pull Request
 
-📜 License
-This project is licensed under MIT License © [Your Name]
+License
+This project is licensed under MIT License © [Samar]
 
-✨ Tips to Improve
+ Tips to Improve
 Add screenshots or GIFs of the dashboard and task flow
 
 Include Postman collection for API testing
